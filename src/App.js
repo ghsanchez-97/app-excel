@@ -39,7 +39,7 @@ function App() {
       };
     });
     promise.then((d) =>{
-      console.log(d)
+      console.log(d);
       setFile(d)
     })
   }
@@ -56,7 +56,7 @@ function App() {
        </div>
 
         <TableContainer className="container" component={Paper}>
-          <Table className={classes.table, "row"} aria-label="simple table">
+          <Table className={classes.table} aria-label="simple table">
           {file.map((d) =>(
               <TableHead key={d.name}>
                 <TableBody>
